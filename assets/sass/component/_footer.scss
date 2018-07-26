@@ -1,0 +1,26 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  text-align: center;
+  background-color: #3BA4D2;
+  padding: 10px 0;
+  border-radius: 20px 20px 0 0;
+  color: $color-white;
+  text-align: center;
+  .footer-content {
+    .border-separetor {
+      display: inline-block;
+      width: 30px;
+      height: 4px;
+      background-color: $color-white;
+      border-radius: 10px;
+    }
+    h2 {
+      margin-bottom: 0px;
+      font-size: rem(17px);
+    }
+  }
+}

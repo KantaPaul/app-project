@@ -1,0 +1,26 @@
+.menu-box {
+  padding: 20px 0;
+  background-color: #f3f2f2;
+}
+.lists {
+  margin: {
+    left: -10px;
+    right: -10px;
+  }
+  .single-list {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    > a {
+      border-radius: 10px;
+      border: 2px solid transparent;
+      @include transition;
+      display: block;
+      overflow: hidden;
+      box-shadow: $primary-shadow;
+      &:hover {
+        border-color: #cc0c52;
+      }
+    }
+  }
+}
