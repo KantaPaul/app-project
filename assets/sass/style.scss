@@ -1,0 +1,29 @@
+/*
+
+------------------- CSS Table of content --------------------------------
+
+---------------------- common content -----------------------
+1. body reset content
+
+
+---------------------- element content ---------------------------
+
+
+*/
+
+// variable
+@import 'variable/_variable.scss';
+
+// mixin
+@import 'mixin/_mixin.scss';
+
+// function
+@import 'function/_function.scss';
+
+@import 'reset/_predefine.scss';
+
+@import 'component/header';
+
+@import 'component/banner';
+
+@import 'reset/_inheritance.scss';

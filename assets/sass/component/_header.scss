@@ -1,0 +1,9 @@
+.header {
+  padding: 5px 0;
+  box-shadow: $primary-shadow;
+  position: relative;
+  z-index: 10;
+  .logo {
+    text-align: center;
+  }
+}

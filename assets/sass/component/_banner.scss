@@ -1,0 +1,11 @@
+.banner {
+  padding: 10px 0;
+  background-color: #ECECEC;
+  .swiper-slide {
+    padding: 15px 10px;
+    width: auto;
+    > img {
+      // box-shadow: $primary-shadow;
+    }
+  }
+}

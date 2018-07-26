@@ -1,0 +1,32 @@
+// default color set
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #f4f4f4;
+
+// color set
+$color-primary: #ff5c00;
+
+// title color
+$title-color: #222222;
+
+// social color
+$primary-shadow: 0px 5px 10px 0px rgba($color: #000000, $alpha: .1);
+
+// body var
+$iconFont: 'FontAwesome';
+$bodyFont: 'Quicksand', sans-serif;
+$titleFont: 'Work Sans', sans-serif;
+$fontWeight: 400;
+$bColor: #111111;
+$bfSize: 14px;
+$blineHeight: 26px / $bfSize;
+
+@function rem($pixels, $context: $bfSize) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+	@return $pixels / $context * 1rem;
+}
