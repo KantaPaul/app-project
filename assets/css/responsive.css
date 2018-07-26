@@ -23,7 +23,8 @@
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   .banner .swiper-slide {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
