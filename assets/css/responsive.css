@@ -13,7 +13,9 @@
 
 /* Portrait tablets and small desktops */
 @media  (max-width: 991px) {
-  
+  .main-wraper {
+    
+  }
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
