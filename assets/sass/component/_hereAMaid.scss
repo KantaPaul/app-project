@@ -1,0 +1,39 @@
+.here-a-maid {
+  padding: 30px 0;
+  background-color: #E9E9E9;
+}
+.inline-inputs {
+  border: {
+    bottom: 1px solid #DFDFDF;
+    top: 1px solid #B2B2B2;
+  };
+  padding: 5px 0;
+  margin-bottom: 20px;
+  > .form-group {
+    margin-bottom: 0px;
+    float: left;
+    width: calc(50% - 8px);
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+select.form-control {
+  border: 0px;
+  border-radius: 30px;
+  padding-left: 25px;
+  appearance: none;
+  background-image: url(../images/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  font-size: rem(15px);
+  color: #A22368;
+  > option {
+    color: #A22368;
+  }
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: 35px;
+}
