@@ -17,6 +17,8 @@
 		<link rel="stylesheet" href="assets/css/swiper.min.css">
 		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/zabuto_calendar.min.css">
 		<!--Theme custom css -->
 		<link rel="stylesheet" href="assets/css/style.css">
 
