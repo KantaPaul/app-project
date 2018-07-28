@@ -12,10 +12,11 @@
 		<link rel="icon" type="image/png" href="favicon.ico">
 		<!-- Place favicon.ico in the root directory -->
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="stylesheet" href="assets/css/nice-select.css">
 
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/swiper.min.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 		<!--Theme custom css -->
 		<link rel="stylesheet" href="assets/css/style.css">
 

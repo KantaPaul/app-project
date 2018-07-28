@@ -1,5 +1,5 @@
 <div class="<?php echo $klass; ?>">
-  <div class="swiper-container">
+  <div class="swiper-container banner-slider">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="assets/images/banners/rcs/App Maid Banner 1 2x.png" alt="">
