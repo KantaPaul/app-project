@@ -1,4 +1,4 @@
-.footer {
+.mybadge {
   // position: fixed;
   // bottom: 0;
   // left: 0;
@@ -10,17 +10,24 @@
   border-radius: 20px 20px 0 0;
   color: $color-white;
   text-align: center;
-  .footer-content {
-    .border-separetor {
-      display: inline-block;
-      width: 30px;
-      height: 4px;
-      background-color: $color-white;
-      border-radius: 10px;
+  width: 100%;
+  .badge-title {
+    margin-bottom: 0px;
+    font-size: rem(17px);
+  }
+  .border-separetor {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: $color-white;
+    border-radius: 10px;
+    margin: {
+      left: auto;
+      right: auto;
+      bottom: 7px;
     }
-    h2 {
-      margin-bottom: 0px;
-      font-size: rem(17px);
-    }
+  }
+  &.style2 {
+    background-color: #EF524B;
   }
 }

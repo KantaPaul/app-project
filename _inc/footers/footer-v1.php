@@ -1,8 +1,8 @@
 		<!-- footer section start -->
 		<footer class="<?php echo $klass; ?>">
-			<div class="footer-content">
-				<span class="border-separetor"></span>
-				<h2>CALL A MAID</h2>
+			<div class="mybadge">
+					<span class="border-separetor"></span>
+					<h2 class="badge-title">CALL A MAID</h2>
 			</div>
 		</footer>
 		<!-- footer section end -->	

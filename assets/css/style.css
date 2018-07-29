@@ -186,24 +186,31 @@ select.form-control:not([size]):not([multiple]) {
   height: 35px;
 }
 
-.footer {
+.mybadge {
   text-align: center;
   background-color: #3BA4D2;
   padding: 10px 0;
   border-radius: 20px 20px 0 0;
   color: #ffffff;
   text-align: center;
+  width: 100%;
 }
-.footer .footer-content .border-separetor {
-  display: inline-block;
+.mybadge .badge-title {
+  margin-bottom: 0px;
+  font-size: 1.2142857143rem;
+}
+.mybadge .border-separetor {
+  display: block;
   width: 30px;
   height: 4px;
   background-color: #ffffff;
   border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
 }
-.footer .footer-content h2 {
-  margin-bottom: 0px;
-  font-size: 1.2142857143rem;
+.mybadge.style2 {
+  background-color: #EF524B;
 }
 
 .single-pricing {
@@ -233,6 +240,129 @@ select.form-control:not([size]):not([multiple]) {
   padding-bottom: 40px;
 }
 
+.reserve-form {
+  padding: 40px 0;
+}
+
+.datapicker {
+  position: relative;
+}
+.datapicker::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  color: #EF524B;
+  border-top: solid currentColor;
+  border-right: solid currentColor;
+  border-bottom: solid transparent;
+  border-left: solid transparent;
+  border-width: 10px;
+}
+
+.Zebra_DatePicker {
+  position: static;
+  width: 100% !important;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0px;
+  border-radius: 0px;
+  border: 0px;
+  -webkit-box-shadow: 10px 10px 0px 0 #D8D8D8;
+  box-shadow: 10px 10px 0px 0 #D8D8D8;
+}
+.Zebra_DatePicker .dp_header {
+  margin-bottom: 15px;
+}
+.Zebra_DatePicker .dp_header .dp_caption {
+  position: relative;
+  padding: 0px;
+  height: 88px;
+  color: #EF524B;
+  border-bottom: 5px solid currentColor;
+  border-radius: 0;
+  font-size: 1.4285714286rem;
+  text-align: left;
+}
+.Zebra_DatePicker .dp_header .dp_caption .today {
+  background-color: #EF524B;
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 300;
+  float: left;
+  margin-right: 67px;
+}
+.Zebra_DatePicker .dp_header .dp_caption .month_name {
+  display: block;
+  color: #000000;
+  font-size: 2.1428571429rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.Zebra_DatePicker table {
+  margin-bottom: 15px;
+}
+.Zebra_DatePicker .dp_daypicker th {
+  text-transform: uppercase;
+}
+.Zebra_DatePicker .dp_weekend {
+  color: #EF524B;
+}
+.Zebra_DatePicker td {
+  font-weight: 700;
+  font-size: 1.1428571429rem;
+}
+.Zebra_DatePicker .dp_actions .dp_previous,
+.Zebra_DatePicker .dp_actions .dp_next {
+  display: none;
+}
+.Zebra_DatePicker .dp_actions.dp_footer {
+  display: none !important;
+}
+
+.reserve-content {
+  text-align: center;
+  padding: 30px;
+}
+.reserve-content .reserve-text {
+  font-size: 1.2857142857rem;
+  padding-bottom: 10px;
+}
+.reserve-content .btn {
+  padding: 8px 50px;
+}
+
+.reserve-confirm-content .mybadge {
+  width: 100vw;
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+
+.confirm-content-wraper .media-body {
+  text-align: center;
+}
+.confirm-content-wraper .time-deration {
+  font-weight: 500;
+  font-size: 1.1428571429rem;
+  display: block;
+  margin-bottom: 5px;
+}
+.confirm-content-wraper .mark {
+  background-color: #EF524B;
+  color: #ffffff;
+  padding-bottom: 0px;
+  font-size: 0.8571428571rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.confirm-content-wraper .round-price {
+  color: #EF524B;
+  border-radius: 30px;
+  border: 2px solid currentColor;
+  padding: 7px 0;
+  margin-bottom: 0px;
+}
+
 .btn {
   border-radius: 30px;
   padding: 8px 60px;
@@ -246,6 +376,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 .btn.small {
   padding: 8px 23px;
+}
+.btn.btn-dark {
+  border-color: #3968BA;
+  background-color: #3968BA;
+}
+.btn.btn-danger {
+  background-color: #EF524B;
+  border-color: #EF524B;
 }
 
 /* margin bottom */

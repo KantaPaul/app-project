@@ -11,4 +11,12 @@
   &.small {
     padding: 8px 23px;
   }
+  &.btn-dark {
+    border-color: #3968BA;
+    background-color: #3968BA;
+  }
+  &.btn-danger {
+    background-color: #EF524B;
+    border-color: #EF524B;
+  }
 }

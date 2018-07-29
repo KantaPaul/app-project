@@ -13,13 +13,13 @@
 
 /* Portrait tablets and small desktops */
 @media  (max-width: 991px) {
-  .main-wraper {
-    
+  .Zebra_DatePicker .dp_header .dp_caption .today {
+    margin-right: 237px;
   }
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    
+  
 }
 
 /* Landscape phones and smaller */
@@ -28,8 +28,13 @@
     width: 70%;
     margin: 0 auto;
   }
+  .Zebra_DatePicker .dp_header .dp_caption .today {
+    margin-right: 87px;
+  }
 }
 
 @media (max-width: 320px) {
-
+  .Zebra_DatePicker .dp_header .dp_caption .today {
+    margin-right: 67px;
+  }
 }
