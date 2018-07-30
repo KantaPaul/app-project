@@ -10,10 +10,10 @@
                         <input type="submit" class="btn btn-dark" value="PLACE ORDER">
                     </div>
                     <div class="reserve-confirm-content">
-                        <div class="mybadge style2">
+                        <!-- <div class="mybadge style2">
                             <div class="border-separetor"></div>
                             <h2 class="badge-title">PREBOOK</h2>
-                        </div>
+                        </div> -->
                         <div class="confirm-content-wraper">
                             <div class="media">
                                 <div class="media-body images">

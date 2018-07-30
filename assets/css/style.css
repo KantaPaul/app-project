@@ -186,6 +186,11 @@ select.form-control:not([size]):not([multiple]) {
   height: 35px;
 }
 
+.hire-a-maid-title {
+  font-size: 1.4285714286rem;
+  margin-bottom: 20px;
+}
+
 .mybadge {
   text-align: center;
   background-color: #3BA4D2;
@@ -199,6 +204,9 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 0px;
   font-size: 1.2142857143rem;
 }
+.mybadge .badge-title > a {
+  color: #ffffff;
+}
 .mybadge .border-separetor {
   display: block;
   width: 30px;
@@ -211,6 +219,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 .mybadge.style2 {
   background-color: #EF524B;
+}
+
+.pricing {
+  padding: 50px 0;
 }
 
 .single-pricing {
@@ -333,7 +345,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .reserve-confirm-content .mybadge {
-  width: 100vw;
+  width: calc(100% + 30px);
+  margin-left: -15px;
   margin-left: -15px;
   margin-bottom: 20px;
 }

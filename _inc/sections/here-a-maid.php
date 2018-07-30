@@ -1,6 +1,9 @@
 <div class="<?php echo $klass; ?>">
     <div class="container">
         <div class="here-a-maid-area">
+            <div class="text-center">
+                <h2 class="hire-a-maid-title">HIRE A MAID</h2>
+            </div>
             <form action="#" class="here-a-maid-from" method="get">
                 <div class="inline-inputs clearfix">
                     <div class="form-group">

@@ -2,7 +2,9 @@
 		<footer class="<?php echo $klass; ?>">
 			<div class="mybadge">
 					<span class="border-separetor"></span>
-					<h2 class="badge-title">CALL A MAID</h2>
+					<h2 class="badge-title">
+						<a href="https://play.google.com/store/apps/details?id=com.robotlogistics.callrobot" target="_blank">DOWNLOAD ANDRIOD APP</a>
+					</h2>
 			</div>
 		</footer>
 		<!-- footer section end -->	

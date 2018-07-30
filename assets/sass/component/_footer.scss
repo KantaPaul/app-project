@@ -14,6 +14,9 @@
   .badge-title {
     margin-bottom: 0px;
     font-size: rem(17px);
+    > a {
+      color: $color-white;
+    }
   }
   .border-separetor {
     display: block;

@@ -1,9 +1,13 @@
 <?php include_once('_inc/functions.php'); 
-get_header('v1','Reservation');
+get_header('v1','PreBook');
 ?>
+
+<!-- header start -->
+<?php get_section('header', 'header') ?>
+<!-- header end -->
 
 <!-- reservation start -->
 <?php get_section('reservation', 'reservation') ?>
 <!-- reservation end -->
 
-<?php get_footer('v2', ''); ?>
+<?php get_footer('v1', 'footer'); ?>
