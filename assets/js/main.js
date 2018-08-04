@@ -7,10 +7,51 @@
 
 -------------------------------------------------------------------*/
 
+// function convertCurrency() {
+//   var myamount = $(".amount").val(),
+//       select = $(".currency-lists"),
+//       rFrom = $(".currency-lists")[0].value,
+//       rTo = $(".currency-lists")[1].value,
+//       resultOne = ((myamount * rFrom).toFixed(2)),
+//       output = $('.output');
+  
+//   if (myamount == undefined || myamount === 0) {
+//       output.html("0");
+//   } else {
+//       output.html(resultOne);
+//   }
+//   if (myamount == undefined || myamount === 0) {
+//       output.html(resultOne);
+//   } else {
+//       output.html((resultOne * rTo).toFixed(2));
+//   }
+// }
 
+function convertCurrency() {
+  let select = $('.curencyConvert'),
+      hours = $(select)[0].value,
+      totalHours = parseInt(Math.floor(hours * 60), 10) || 0,
+      minutes = $(select)[1].value,
+      totalMinutes = parseInt(minutes, 10) || 0,
+      totalTime = totalHours + totalMinutes,
+      resultCash = $('.result-cash'),
+      resultCashValue = parseFloat($(resultCash).attr('per-minute'), 10) || 0,
+      totalAmaunt = resultCashValue * totalTime;
+      $('.result-minutes').text(`${totalTime} Minutes`);
+      $('.result-cash').text(`BDT ${totalAmaunt}`);
+}
+
+$(window).on('load', function() {
+  
+}); // END load Function 
 
 
 $(document).ready(function() {
+
+  $('.curencyConvert').on('change', function () {
+    convertCurrency();
+  });
+
   if ($('.banner-slider').length > 0) {
     var swiper = new Swiper('.banner-slider', {
       slidesPerView: 'auto',
@@ -70,31 +111,12 @@ $(document).ready(function() {
 
 }); // end ready function
 
-$(window).on('load', function() {
-  
-}); // END load Function 
-
-function perfectCenter() {
-  // var marginRight = ($('.dp_caption').outerWidth(true) / 2) - $('.today').outerWidth(true);
-  // $('.today').css({
-  //   marginRight: marginRight
-  // })
-}
-
-$(window).on('load', function() {
-	perfectCenter()
-}); // END load Function 
-
-$(document).ready(function () {
-  perfectCenter()
-})
-
 $(window).on('scroll', function() {
 	
 }); // END Scroll Function 
 
 $(window).on('resize', function() {
-  perfectCenter();
+  
 }); // End Resize
 
 })(jQuery);

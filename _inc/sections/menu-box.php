@@ -1,8 +1,13 @@
 <section class="<?php echo $klass; ?>">
     <div class="container">
         <ul class="lists clearfix">
-            <li class="single-list">
+            <!-- <li class="single-list">
                 <a href="here-a-maid.html">
+                    <img src="assets/images/icon/on demand@2x.png" alt="">
+                </a>
+            </li> -->
+            <li class="single-list">
+                <a href="#">
                     <img src="assets/images/icon/on demand@2x.png" alt="">
                 </a>
             </li>
