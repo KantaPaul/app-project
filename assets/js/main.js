@@ -7,26 +7,6 @@
 
 -------------------------------------------------------------------*/
 
-// function convertCurrency() {
-//   var myamount = $(".amount").val(),
-//       select = $(".currency-lists"),
-//       rFrom = $(".currency-lists")[0].value,
-//       rTo = $(".currency-lists")[1].value,
-//       resultOne = ((myamount * rFrom).toFixed(2)),
-//       output = $('.output');
-  
-//   if (myamount == undefined || myamount === 0) {
-//       output.html("0");
-//   } else {
-//       output.html(resultOne);
-//   }
-//   if (myamount == undefined || myamount === 0) {
-//       output.html(resultOne);
-//   } else {
-//       output.html((resultOne * rTo).toFixed(2));
-//   }
-// }
-
 function convertCurrency() {
   let select = $('.curencyConvert'),
       hours = $(select)[0].value,
@@ -36,7 +16,8 @@ function convertCurrency() {
       totalTime = totalHours + totalMinutes,
       resultCash = $('.result-cash'),
       resultCashValue = parseFloat($(resultCash).attr('per-minute'), 10) || 0,
-      totalAmaunt = resultCashValue * totalTime;
+      serviceCharge = parseFloat($(resultCash).attr('service-charge'), 10) || 0,
+      totalAmaunt = Math.floor((resultCashValue * totalTime) + serviceCharge);
       $('.result-minutes').text(`${totalTime} Minutes`);
       $('.result-cash').text(`BDT ${totalAmaunt}`);
 }

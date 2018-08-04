@@ -2,7 +2,7 @@
     <div class="container">
         <ul class="lists clearfix">
             <!-- <li class="single-list">
-                <a href="on-demad.html">
+                <a href="on-demand.html">
                     <img src="assets/images/icon/on demand@2x.png" alt="">
                 </a>
             </li> -->

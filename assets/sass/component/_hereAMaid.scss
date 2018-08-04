@@ -42,3 +42,35 @@ select.form-control:not([size]):not([multiple]) {
   font-size: rem(20px);
   margin-bottom: 20px;
 }
+
+.title-wraper {
+  margin-bottom: 10px;
+  .demand-title {
+    float: left;
+    width: 50%;
+    text-align: center;
+    > h3 {
+      font-size: rem(18px);
+      margin-bottom: 0;
+    }
+    + .demand-title {
+      float: right;
+    }
+  }
+}
+
+.result {
+  color: #A22268;
+  .result-title {
+    text-align: center;
+    font-weight: 400;
+    font-size: rem(24px);
+  }
+  .result-minutes {
+    font-size: rem(16px);
+  }
+  .result-cash {
+    font-weight: 500;
+    font-size: rem(20px);
+  }
+}

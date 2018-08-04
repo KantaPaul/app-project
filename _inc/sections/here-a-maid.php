@@ -4,7 +4,15 @@
             <div class="text-center">
                 <h2 class="hire-a-maid-title">HIRE A MAID</h2>
             </div>
-            <form action="#" class="here-a-maid-from" method="get">
+            <form action="#" class="here-a-maid-from" id="on-demand-form" method="get">
+                <div class="title-wraper clearfix">
+                    <div class="demand-title">
+                        <h3>Hour(s)</h3>
+                    </div>
+                    <div class="demand-title">
+                        <h3>Minute(s)</h3>
+                    </div>
+                </div>
                 <div class="inline-inputs clearfix">
                     <div class="form-group">
                         <select name="#" class="form-control curencyConvert">
@@ -32,12 +40,12 @@
                     </div>
                 </div>
                 <div class="result">
-                    <h3>Estimeted Bill</h3>
+                    <h3 class="result-title">Estimeted Bill</h3>
                     <p class="result-minutes"></p>
-                    <p class="result-cash" per-minute="1.75"></p>
+                    <p class="result-cash" per-minute="1.67" service-charge="50"></p>
                 </div>
                 <div class="text-center">
-                    <input type="submit" class="btn btn-primary" value="CONTINUE">
+                    <a href="form.html" id="on-demand" class="btn btn-primary">CONTINUE</a>
                 </div>
             </form>
         </div>
