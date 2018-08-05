@@ -1,4 +1,0 @@
-RewriteEngine On
-AddType application/x-httpd-php5 .html .htm
-AddType application/x-httpd-php .html .htm
-DirectoryIndex _default.php

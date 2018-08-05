@@ -1,19 +1,112 @@
-<?php include_once('_inc/functions.php'); 
-get_header('v1','Index');
-?>
 
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Hello Task - Index</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700%7CWork+Sans:400,500,600" rel="stylesheet">
+
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/swiper.min.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/zebra_datepicker.css">
+		<!--Theme custom css -->
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!--Theme Responsive css-->
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+	</head>
+	<body>
 <main class="main-wraper">
   <!-- header start -->
-  <?php get_section('header', 'header') ?>
-  <!-- header end -->
+  <div class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html" class="brand">
+                <img src="assets/images/HT-Logo.png" alt="">
+            </a>
+        </div>
+    </div><!-- .container END -->
+</div>  <!-- header end -->
 
   <!-- banner start -->
-  <?php get_section('banner', 'banner') ?>
-  <!-- banner end -->
+  <div class="banner">
+  <div class="swiper-container banner-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/images/banners/rcs/App Maid Banner 1 2x.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/banners/rcs/App Maid Banner 2 2x.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/banners/rcs/App Maid Banner 3 2x.png" alt="">
+      </div>
+    </div>    
+  </div>
+</div>  <!-- banner end -->
 
   <!-- menu-box start -->
-  <?php get_section('menu-box', 'menu-box') ?>
-  <!-- menu-box end -->
+  <section class="menu-box">
+    <div class="container">
+        <ul class="lists clearfix">
+            <!-- <li class="single-list">
+                <a href="on-demand.html">
+                    <img src="assets/images/icon/on demand@2x.png" alt="">
+                </a>
+            </li> -->
+            <li class="single-list">
+                <a href="#">
+                    <img src="assets/images/icon/on demand@2x.png" alt="">
+                </a>
+            </li>
+            <li class="single-list">
+                <a href="#">
+                    <img src="assets/images/icon/permanent@2x.png" alt="">
+                </a>
+            </li>
+            <li class="single-list">
+                <a href="prebook.html">
+                    <img src="assets/images/icon/prebook@2x.png" alt="">
+                </a>
+            </li>
+            <li class="single-list">
+                <a href="pricing.html">
+                    <img src="assets/images/icon/special@2x.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div><!-- .container END -->
+</section>  <!-- menu-box end -->
 </main>
 
-<?php get_footer('v1', 'footer'); ?>
+		<!-- footer section start -->
+		<footer class="footer">
+			<div class="mybadge">
+					<span class="border-separetor"></span>
+					<h2 class="badge-title">
+						<a href="https://play.google.com/store/apps/details?id=com.robotlogistics.callrobot" target="_blank">DOWNLOAD ANDRIOD APP</a>
+					</h2>
+			</div>
+		</footer>
+		<!-- footer section end -->	
+		<!-- js file start -->
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/Popper.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/zebra_datepicker.src.js"></script>
+		<script src="assets/js/main.js"></script>		<!-- End js file -->
+	</body>
+</html>
