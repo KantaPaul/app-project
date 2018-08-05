@@ -22,12 +22,20 @@ function convertCurrency() {
       $('.result-cash').text(`BDT ${totalAmaunt}`);
 }
 
+function contentCenter() {
+  let footer = $('.footer .mybadge').outerHeight(true),
+      confirmContent = $('.confirm-massage-content');
+  confirmContent.css('marginTop', -(footer));
+}
+
 $(window).on('load', function() {
-  
+  contentCenter();
 }); // END load Function 
 
 
 $(document).ready(function() {
+
+  contentCenter();
 
   $('.curencyConvert').on('change', function () {
     convertCurrency();
@@ -97,7 +105,7 @@ $(window).on('scroll', function() {
 }); // END Scroll Function 
 
 $(window).on('resize', function() {
-  
+  contentCenter();
 }); // End Resize
 
 })(jQuery);

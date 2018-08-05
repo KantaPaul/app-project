@@ -1,14 +1,3 @@
-@for $i from 0 through 10 {
-  /* margin bottom */
-  .mb_#{$i} {
-		margin-bottom: $i * 10px;
-  }
-  /* padding bottom */
-	.pb_#{$i} {
-		padding-bottom: $i * 10px;
-	}
-}
-
 /* default style a tag */
 a {
   @include transition;
@@ -22,144 +11,10 @@ p {
   }
 }
 
-/* round icon */
-.round-icon {
-  @include equal-size-lineHeight(50px);
-  text-align: center;
-  border-radius: 100%;
-  background-color: $color-primary;
-	color: $color-white;
-	@include transition;
-  &:hover {
-    background-color: $color-white;
-    color: $color-primary;
-  }
-  &.medium {
-    font-size: rem(30px);
-    @include equal-size-lineHeight(70px);
-  }
-}
-
-/* overlay */
-.overlay {
-	@include overlay(.8);
-}
-
-// first color name and second your selected color
-$colorList: (black, $color-black),
-			(white, $color-white),
-			(primary, $color-primary),
-			(gray, $color-gray);
-@each $colorName, $color in $colorList {
-	/* color */
-	.#{$colorName}-color {
-		color: $color; 
-	}
-	/* background color */
-	.#{$colorName}-bg {
-		background-color: $color; 
-	}
-}
-
 /* remove from control focus box shadow */
 .form-control {
 	&:focus {
 		box-shadow: none;
-	}
-}
-
-/* bootstrap nav style reset */
-.nav-tabs {
-	border-bottom: 0px;
-}
-
-/* owl image preset */
-.owl-carousel .owl-item img {
-	width: auto;
-}
-
-/* tab pane animation */
-.tab-pane.animated {
-	animation-duration: 1.5s;
-}
-
-/* remove iframe box shadow and background */
-.mfp-iframe-scaler iframe {
-	box-shadow: none;
-	background: transparent;
-}
-
-/* section padding */
-$section-padding: 100px;
-.section-padding {
-	padding: $section-padding 0;
-}
-.section-padding-bottom {
-	padding-bottom: $section-padding;
-}
-.section-padding-top {
-	padding-top: $section-padding;
-}
-
-/* parallax */
-.parallax {
-  background-attachment: fixed;
-}
-
-/* background image */ 
-.background-image {
-  @include background-content();
-}
-
-/* content label */
-.content-label {
-	@include equal-size-lineHeight(20px)	;
-	text-align: center;
-	background-color: $color-primary;
-	border-radius: 50%;
-	display: inline-block;
-	color: $color-white;
-	font-weight: 500;
-	font-size: rem(14px);
-	position: absolute;
-	top: 3px;
-	right: -8px;
-}
-
-/* border with fill icoon */
-.border-with-fill-icon {
-	@include equal-size-lineHeight(100px);
-	text-align: center;
-	border-radius: 100%;
-	font-size: rem(40px);
-	color: $color-primary;
-	border: 1px solid currentColor;
-	@include transition;
-	&:hover {
-		background-color: $color-primary;
-		color: $color-white;
-	}
-}
-/* if parent text center */
-.text-center {
-	.border-with-fill-icon {
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-/* if parent text right */
-.text-right {
-	.border-with-fill-icon {
-		margin-left: auto;
-	}
-}
-
-/* icon wraper */
-.icon-wraper {
-	> i {
-		&:not(:last-child) {
-			margin-right: 10px;
-		}
 	}
 }
 
@@ -168,4 +23,14 @@ iframe {
 	height: 100%;
 	width: 100%;
 	display: block;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
