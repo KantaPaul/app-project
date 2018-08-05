@@ -215,9 +215,12 @@ select.form-control:not([size]):not([multiple]) {
 
 .result {
   color: #A22268;
+  text-align: center;
+}
+.result > p {
+  line-height: 1;
 }
 .result .result-title {
-  text-align: center;
   font-weight: 400;
   font-size: 1.7142857143rem;
 }

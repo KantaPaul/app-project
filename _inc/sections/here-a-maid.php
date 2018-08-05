@@ -39,7 +39,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="result">
+                <div class="result mb-3">
                     <h3 class="result-title">Estimeted Bill</h3>
                     <p class="result-minutes"></p>
                     <p class="result-cash" per-minute="1.67" service-charge="50"></p>
