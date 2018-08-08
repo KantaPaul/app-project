@@ -183,9 +183,17 @@ select.form-control {
   background-position: right 16px center;
   font-size: 1.0714285714rem;
   color: #A22368;
+  border: 1px solid transparent;
 }
 select.form-control > option {
   color: #A22368;
+}
+
+.form-control:focus {
+  border-color: #A22368;
+}
+.form-control.error {
+  border-color: #ff3333;
 }
 
 select.form-control:not([size]):not([multiple]) {
@@ -232,16 +240,21 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 1.4285714286rem;
 }
 
+.validate-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.8571428571rem;
+}
+
 .form-wraper {
   margin: 50px 0;
 }
 
 .mybadge {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 15;
-  width: 100%;
   text-align: center;
   background-color: #3BA4D2;
   padding: 10px 0;

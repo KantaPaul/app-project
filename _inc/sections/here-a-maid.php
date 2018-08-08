@@ -4,7 +4,7 @@
             <div class="text-center">
                 <h2 class="hire-a-maid-title">HIRE A MAID</h2>
             </div>
-            <form action="#" class="here-a-maid-from" id="on-demand-form" method="get">
+            <form action="#" base-url="form.html" class="here-a-maid-from" id="on-demand-form" method="get">
                 <div class="title-wraper clearfix">
                     <div class="demand-title">
                         <h3>Hour(s)</h3>
@@ -45,7 +45,7 @@
                     <p class="result-cash" per-minute="1.67" service-charge="50"></p>
                 </div>
                 <div class="text-center">
-                    <a href="form.html" id="on-demand" class="btn btn-primary">CONTINUE</a>
+                    <input type="submit" id="on-demand" class="btn btn-primary" value="CONTINUE">
                 </div>
             </form>
         </div>

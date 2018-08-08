@@ -28,6 +28,11 @@ function contentCenter() {
   confirmContent.css('marginTop', -(footer));
 }
 
+function number_regex(number) {
+	var regex = /(^(\+8801|8801|01|008801))[1|5-9]{1}(\d){8}$/;
+	return regex.test(number);
+}
+
 $(window).on('load', function() {
   contentCenter();
 }); // END load Function 
@@ -97,6 +102,57 @@ $(document).ready(function() {
   });
 
   $('.dp_caption').prepend('<span class="today">'+ $('.dp_current').text() +'</span>');
+
+  $(document).on('submit', '#on-demand-form', function (e) {
+    e.preventDefault();
+    var select = $('.curencyConvert'),
+        hour = $(select)[0],
+        hourValue = $(select)[0].value,
+        minute = $(select)[1],
+        minuteValue = $(select)[1].value,
+        error = false,
+        loc = window.location,
+        pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1),
+        baseUrl = $(this).attr('base-url');
+  
+      if (hourValue.toLowerCase() == 'select' && minuteValue.toLowerCase() == 'select' || $('.result-cash').text().length == 0) {
+        $(hour).addClass('error');
+        $(minute).addClass('error');
+        error = true;
+      } else {
+        error = false;
+        window.location.href = pathName+baseUrl;
+      }
+  });
+
+  $(document).on('submit', '#confirmation-form', function(e) {
+    e.preventDefault();
+    var name = $('#input-name'),
+        number = $('#input-number'),
+        address = $('#input-address'),
+        error = false;
+    if ($(name).val().trim() === '') {
+      $(name).addClass('error');
+    } else {
+      $(name).removeClass('error')
+    }
+    if ($(address).val().trim() === '') {
+      $(address).addClass('error');
+    } else {
+      $(address).removeClass('error')
+    }
+    if ($(number).val().trim() === '') {
+      $(number).addClass('error');
+    } else if (!number_regex($(number).val()))  {
+      $(number).addClass('error');
+      if ($('.validate-text').length === 0) {
+        $(number).after('<span class="validate-text">Number Example: +8801234567890 Max Carecter 14</span>');
+      }
+    } else {
+      $(number).removeClass('error');
+      $('.validate-text').remove();
+    }
+  });
 
 }); // end ready function
 

@@ -29,8 +29,18 @@ select.form-control {
   background-position: right 16px center;
   font-size: rem(15px);
   color: #A22368;
+  border: 1px solid transparent;
   > option {
     color: #A22368;
+  }
+}
+
+.form-control {
+  &:focus {
+    border-color: #A22368;
+  }
+  &.error {
+    border-color: lighten($color: red, $amount: 10);
   }
 }
 
@@ -76,4 +86,11 @@ select.form-control:not([size]):not([multiple]) {
     font-weight: 500;
     font-size: rem(20px);
   }
+}
+
+.validate-text {
+  user-select: none;
+  pointer-events: none;
+  color: rgba($color: #000000, $alpha: .8);
+  font-size: rem(12px);
 }
