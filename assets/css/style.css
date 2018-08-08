@@ -294,9 +294,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing {
   height: 100vh;
-}
-.pricing .pricing-slider {
-  padding-top: 30vh;
+  padding: 20vh 0;
 }
 
 .single-pricing {
@@ -324,6 +322,43 @@ select.form-control:not([size]):not([multiple]) {
 }
 .single-pricing .pricing-footer {
   padding-bottom: 40px;
+}
+
+.pricing-slider {
+  position: relative;
+}
+.pricing-slider .owl-nav .owl-prev,
+.pricing-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.2857142857rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.pricing-slider .owl-nav .owl-prev:hover,
+.pricing-slider .owl-nav .owl-next:hover {
+  border-color: currentColor;
+  background-color: transparent;
+  color: #000000;
+}
+.pricing-slider .owl-nav .owl-prev {
+  left: 0;
+}
+.pricing-slider .owl-nav .owl-next {
+  right: 0;
 }
 
 .reserve-form {
@@ -465,6 +500,11 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 700;
   color: #A22368;
   margin-bottom: 20px;
+}
+
+.product-confirm {
+  height: 100vh;
+  padding: 30vh 0;
 }
 
 .btn {

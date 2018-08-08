@@ -66,7 +66,8 @@ $(document).ready(function() {
         items: 3,
         mouseDrag: false,
         autoplay: false,
-        nav: false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
         margin: 30,
         dots: false,
         responsive: {
@@ -82,7 +83,8 @@ $(document).ready(function() {
           1024: {
             items: 3,
             mouseDrag: false,
-            loop: false
+            loop: false,
+            nav: false
           }
         }
     });
