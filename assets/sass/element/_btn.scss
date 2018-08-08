@@ -20,3 +20,14 @@
     border-color: #EF524B;
   }
 }
+
+.btn-link {
+  padding: 10px 20px;
+  border: 1px solid $color-black;
+  display: inline-block;
+  color: $color-black;
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}

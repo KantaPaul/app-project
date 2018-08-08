@@ -251,7 +251,11 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .form-wraper {
-  margin: 50px 0;
+  padding-top: 30vh;
+}
+
+.form-area {
+  height: 100vh;
 }
 
 .mybadge {
@@ -284,8 +288,15 @@ select.form-control:not([size]):not([multiple]) {
   background-color: #EF524B;
 }
 
+.footer-btn {
+  margin-bottom: 30px;
+}
+
 .pricing {
-  padding: 50px 0;
+  height: 100vh;
+}
+.pricing .pricing-slider {
+  padding-top: 30vh;
 }
 
 .single-pricing {
@@ -477,6 +488,17 @@ select.form-control:not([size]):not([multiple]) {
 .btn.btn-danger {
   background-color: #EF524B;
   border-color: #EF524B;
+}
+
+.btn-link {
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  display: inline-block;
+  color: #000000;
+}
+.btn-link:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* default style a tag */

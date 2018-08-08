@@ -4,7 +4,7 @@
             <div class="single-slide">
                 <div class="single-pricing text-center">
                     <div class="pricing-header">
-                        <h2 class="pricing-title">On Demand</h2>
+                        <h2 class="pricing-title">WEEKLY PACK</h2>
                         <h3 class="pricing-price">৳ 100</h3>
                         <p>Per Hour</p>
                     </div><!-- .pricing-header END -->
@@ -24,7 +24,7 @@
             <div class="single-slide">
                 <div class="single-pricing text-center">
                     <div class="pricing-header">
-                        <h2 class="pricing-title">Package</h2>
+                        <h2 class="pricing-title">FORTNIGHTLY PACK</h2>
                         <h3 class="pricing-price">৳ 120</h3>
                         <p>Per Hour</p>
                     </div><!-- .pricing-header END -->
@@ -44,7 +44,7 @@
             <div class="single-slide">
                 <div class="single-pricing text-center">
                     <div class="pricing-header">
-                        <h2 class="pricing-title">Prebook</h2>
+                        <h2 class="pricing-title">MONTHLY PACK</h2>
                         <h3 class="pricing-price">৳ 600</h3>
                         <p>4 hours/day</p>
                     </div><!-- .pricing-header END -->

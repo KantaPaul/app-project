@@ -1,6 +1,6 @@
 		<!-- footer section start -->
 		<footer class="<?php echo $klass; ?>">
-			<div class="text-center">
+			<div class="text-center footer-btn">
 				<a href="https://hellotask.app/" class="btn-link">Click here to see full website</a>
 			</div>
 			<div class="mybadge">
