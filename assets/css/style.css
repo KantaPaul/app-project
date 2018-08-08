@@ -183,9 +183,17 @@ select.form-control {
   background-position: right 16px center;
   font-size: 1.0714285714rem;
   color: #A22368;
+  border: 1px solid transparent;
 }
 select.form-control > option {
   color: #A22368;
+}
+
+.form-control:focus {
+  border-color: #A22368;
+}
+.form-control.error {
+  border-color: #ff3333;
 }
 
 select.form-control:not([size]):not([multiple]) {
@@ -232,16 +240,25 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 1.4285714286rem;
 }
 
+.validate-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.8571428571rem;
+}
+
 .form-wraper {
-  margin: 50px 0;
+  padding-top: 30vh;
+}
+
+.form-area {
+  height: 100vh;
 }
 
 .mybadge {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 15;
-  width: 100%;
   text-align: center;
   background-color: #3BA4D2;
   padding: 10px 0;
@@ -271,8 +288,13 @@ select.form-control:not([size]):not([multiple]) {
   background-color: #EF524B;
 }
 
+.footer-btn {
+  margin-bottom: 30px;
+}
+
 .pricing {
-  padding: 50px 0;
+  height: 100vh;
+  padding: 20vh 0;
 }
 
 .single-pricing {
@@ -300,6 +322,43 @@ select.form-control:not([size]):not([multiple]) {
 }
 .single-pricing .pricing-footer {
   padding-bottom: 40px;
+}
+
+.pricing-slider {
+  position: relative;
+}
+.pricing-slider .owl-nav .owl-prev,
+.pricing-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.2857142857rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+.pricing-slider .owl-nav .owl-prev:hover,
+.pricing-slider .owl-nav .owl-next:hover {
+  border-color: currentColor;
+  background-color: transparent;
+  color: #000000;
+}
+.pricing-slider .owl-nav .owl-prev {
+  left: 0;
+}
+.pricing-slider .owl-nav .owl-next {
+  right: 0;
 }
 
 .reserve-form {
@@ -443,6 +502,11 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 20px;
 }
 
+.product-confirm {
+  height: 100vh;
+  padding: 30vh 0;
+}
+
 .btn {
   border-radius: 30px;
   padding: 8px 60px;
@@ -464,6 +528,17 @@ select.form-control:not([size]):not([multiple]) {
 .btn.btn-danger {
   background-color: #EF524B;
   border-color: #EF524B;
+}
+
+.btn-link {
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  display: inline-block;
+  color: #000000;
+}
+.btn-link:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* default style a tag */

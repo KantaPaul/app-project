@@ -44,15 +44,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-wraper">
-                    <form action="#" class="form" method="post">
+                    <form action="#" id="confirmation-form" class="form" method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" id="input-name" class="form-control" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" placeholder="Mobile Number">
+                            <input type="text" id="input-number" class="form-control" maxlength="14" size="14" placeholder="Mobile Number">
                         </div>
                         <div class="form-group">
-                            <textarea name="address" id="address" placeholder="Address" class="form-control" cols="30" rows="10"></textarea>
+                            <textarea name="address" id="input-address" placeholder="Address" class="form-control" cols="30" rows="10"></textarea>
                         </div>
                         <input type="submit" value="Submit" class="btn btn-primary">
                     </form>
@@ -64,6 +64,9 @@
 
 		<!-- footer section start -->
 		<footer class="footer">
+			<div class="text-center footer-btn">
+				<a href="https://hellotask.app/" class="btn-link">Click here to see full website</a>
+			</div>
 			<div class="mybadge">
 					<span class="border-separetor"></span>
 					<h2 class="badge-title">
