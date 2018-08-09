@@ -89,12 +89,15 @@ $(document).ready(function() {
         }
     });
   }
-
-  $('#datepicker').Zebra_DatePicker({
-    always_visible: $('.datapicker'),
-    show_other_months: false,
-    days_abbr: false,
-  });
+  
+  if ($('#datepicker').length > 0) {
+    $('#datepicker').Zebra_DatePicker({
+      always_visible: $('.datapicker'),
+      show_other_months: false,
+      days_abbr: false,
+      direction: [1,7]
+    });  
+  }
 
 	$(".dp_caption").html(function(){
     var text= $(this).text().trim().split(" "),
